@@ -61,7 +61,7 @@ class PromptBuilder:
 class MCPToolExecutor:
     def __init__(self, command: str = "python", args: List[str] = None):
         if args is None:
-            args = ["/home/ts75080/Desktop/MCP_research_paper/mcp/paper_code/weather_server.py"]
+            args = ["weather_server.py"]
         self.server_params = StdioServerParameters(command=command, args=args)
 
     async def execute(self, query: str, llm_client: LLMClientClaude):

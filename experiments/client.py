@@ -13,7 +13,7 @@ load_dotenv()
 server_params = StdioServerParameters(
     command="python",
     args=[
-        "/home/ts75080/Desktop/MCP_research_paper/mcp/mcp-labs-servers/mcp_client_server_stdio/bmi_server.py"
+        "server.py"
     ],
 )
 
